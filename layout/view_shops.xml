@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#186865"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/go_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:foreground="@drawable/ic_go_back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Shops"
+            android:paddingLeft="30dp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:textColor="#e3f5ff"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".view_shopRoute">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/serch_shop"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_edittext"
+                    android:hint="Enter shop name"
+                    android:textColor="#000"
+                    android:textColorHint="#999999"
+                    android:padding="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/searchBTN"
+                    android:layout_width="133dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/button"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:text="Search"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="133dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/button"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:text="Delete"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shopList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp">
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

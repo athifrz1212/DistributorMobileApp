@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:background="#186865">
+
+        <RelativeLayout
+            android:id="@+id/go_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:foreground="@drawable/ic_go_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Reports"
+            android:paddingLeft="30dp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:textColor="#e3f5ff"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Select Month :"
+                android:textStyle="bold"
+                android:paddingStart="5dp"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/DateSelector"
+                    android:layout_width="195dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#000"
+                    android:background="@drawable/bg_edittext" />
+
+                <LinearLayout
+                    android:id="@+id/DateSelectorBTN"
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:textColor="#000"
+                    android:background="@drawable/bg_calendar"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/BrandReportBTN"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="Brand Report"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/ProfitReportBTN"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="Profit Report"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/RepairReportBTN"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="Repairs Report"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/OrderReportBTN"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="Orders Report"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/MonthlySalesBTN"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="Monthly Sales Report"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/ShopSalesReportBTN"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="Shop Sales Report"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

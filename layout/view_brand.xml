@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg2"
+    tools:context=".view_brand"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:background="#186865">
+
+        <RelativeLayout
+            android:id="@+id/go_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:foreground="@drawable/ic_go_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Brands"
+            android:paddingLeft="30dp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:textColor="#e3f5ff"
+
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addBTN"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/button_add"
+            android:layout_gravity="right"
+            >
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_add"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textColor="#186865"
+                android:text="Add Brand"
+                android:textSize="17sp"/>
+        </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/brand_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="#66ff" />
+
+</LinearLayout>
