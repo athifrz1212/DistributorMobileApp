@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.distributorapp">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/Theme.DistributorApp">
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key"/>
+
+        <activity
+            android:name=".login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".home" />
+
+        <activity android:name=".reportGenerator" />
+
+        <activity android:name=".add_product" />
+        <activity android:name=".add_order" />
+        <activity android:name=".add_payment" />
+        <activity android:name=".add_repair" />
+        <activity android:name=".add_brand" />
+        <activity android:name=".add_shopRoute"/>
+
+        <activity android:name=".view_product" />
+        <activity android:name=".view_brand" />
+        <activity android:name=".view_repairs" />
+        <activity android:name=".view_shopRoute" />
+        <activity android:name=".view_shops" />
+
+        <activity android:name=".edit_brand" />
+        <activity android:name=".edit_product" />
+        <activity android:name=".edit_repair" />
+        <activity android:name=".edit_shopRoute" />
+        <activity android:name=".edit_order" />
+
+        <activity android:name=".shop_page" />
+        <activity
+            android:name=".MapActivity"
+            android:exported="true"/>
+
+        <provider
+            android:authorities="com.example.distributorapp.provider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+    </application>
+
+</manifest>
